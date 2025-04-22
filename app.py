@@ -30,11 +30,11 @@ logger = logging.getLogger(__name__)
 # Env vars
 load_dotenv()
 
-DATABRICKS_SPACE_ID = os.getenv("168706910560942")
+DATABRICKS_SPACE_ID = os.getenv("01f01fb05f5c13a6ad7194f3eda70778")
 DATABRICKS_HOST = os.getenv("https://adb-168706910560942.2.azuredatabricks.net")
 DATABRICKS_TOKEN = os.getenv("dapie6df09a0f661cbb767504df847e8895b-3")
-APP_ID = os.getenv("MicrosoftAppId", "2175cb9c-20aa-4b95-81ed-3952345b9d29")
-APP_PASSWORD = os.getenv("MicrosoftAppPassword", "sNX8Q~ZlE23hTBIZfUh52QKrfEAve8QPNFdNgc4H")
+APP_ID = os.getenv("2175cb9c-20aa-4b95-81ed-3952345b9d29")
+APP_PASSWORD = os.getenv("sNX8Q~ZlE23hTBIZfUh52QKrfEAve8QPNFdNgc4H")
 
 workspace_client = WorkspaceClient(
     host=DATABRICKS_HOST,
